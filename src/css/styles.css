@@ -1,0 +1,474 @@
+:root {
+    --color-primari: #5fbaa7;
+    --color-primari-transp: #eff8f6;
+    --color-secundari: #242333;
+    --color-blanc: #fff;
+    --color-gris: #444451;
+}
+
+html {
+    height: 100%;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--color-secundari);
+}
+
+body {
+    margin: 0;
+}
+
+html h2 {
+    color: var(--color-primari);
+}
+
+ul {
+    list-style-type: none;
+}
+
+/** Capçalera **/
+header {
+    background-color: var(--color-gris);
+    color: var(--color-blanc) !important;
+}
+
+header a {
+    color: var(--color-blanc) !important;
+    text-decoration: none;
+    border-bottom: initial;
+}
+
+header a:hover {
+    color: var(--color-primari) !important;
+    text-decoration: none;
+    border-bottom: initial;
+}
+
+body.portada {
+    height: 100%;
+    background-image: url("../img/oliva.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.portada>main {
+    display: block;
+    text-align: center;
+}
+
+/** BOTONS **/
+
+.btn {
+    color: var(--color-blanc);
+    background-color: var(--color-primari);
+    text-align: center;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.btn:hover,
+.btnIndex {
+    background-color: var(--color-blanc);
+    color: var(--color-primari);
+    text-align: center;
+    font-weight: 700;
+    border: none;
+    border-radius: 12px;
+    padding: 1rem;
+    margin: 1rem;
+}
+
+.btnIndex>a {
+    color: var(--color-primari);
+    text-decoration: none;
+    border-bottom: initial;
+}
+
+.btnIndex>a:hover {
+    color: var(--color-gris);
+    text-decoration: none;
+    border-bottom: initial;
+}
+
+/** DISPOSITIU MÒBIL **/
+@media screen and (max-width: 43rem) {
+    .container {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .marge {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    /** COLUMNES **/
+    .col_2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        gap: 0px;
+    }
+
+    .col_4 {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        gap: 20px;
+    }
+
+    .categoria>footer {
+        padding: 1.5rem;
+        background-color: var(--color-gris);
+        color: var(--color-blanc) !important;
+        position: absolute;
+        margin-top: 5%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        font-size: 1.1rem;
+    }
+
+    /** IMATGES **/
+    #logotip {
+        max-width: 30%;
+    }
+}
+
+/** TABLET **/
+@media screen and (min-width: 44rem) and (max-width: 62rem) {
+    .container {
+        position: relative;
+        min-height: 100vh;
+    }
+
+    .marge {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    /** COLUMNES **/
+    .col_2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        gap: 0px;
+    }
+
+    .col_4 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        gap: 20px;
+    }
+
+
+    /** IMATGES **/
+
+    #logotip {
+        max-width: 20%;
+    }
+}
+
+/** DESKTOP **/
+@media screen and (min-width: 63rem) {
+    .container {
+        position: relative;
+    }
+
+    .marge {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    /** COLUMNES **/
+    .col_2 {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-auto-rows: minmax(50px, auto);
+        gap: 0px;
+        margin-bottom: 5%;
+        position: relative;
+    }
+
+    .col_4 {
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-auto-rows: minmax(100px, auto);
+        gap: 20px;
+    }
+
+    /** MENU **/
+    .menu>li {
+        display: inline-flex;
+        padding-right: 2%;
+    }
+
+    .menu_inicial {
+        position: absolute;
+        width: 60%;
+        top: 60%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        color: var(--color-secundari);
+    }
+
+    #logotip {
+        max-width: 40%;
+    }
+
+    .categoria>footer {
+        padding: 1.5rem;
+        background-color: var(--color-gris);
+        color: var(--color-blanc) !important;
+        position: absolute;
+        margin-top: 5%;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        font-size: 1.1rem;
+    }
+}
+
+/** PEU DE PÀGINA **/
+footer,
+.categoria>footer {
+    padding: 1.5rem;
+    background-color: var(--color-gris);
+    color: var(--color-blanc) !important;
+    position: absolute;
+    margin-top: 5%;
+    right: 0;
+    left: 0;
+
+    font-size: 1.1rem;
+}
+
+.portada>footer {
+    padding: 1.5rem;
+    background-color: var(--color-gris);
+    color: var(--color-blanc) !important;
+    position: absolute;
+    margin-top: 5%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    font-size: 1.1rem;
+}
+
+footer a {
+    color: var(--color-blanc) !important;
+    text-decoration: none;
+    border-bottom: initial;
+}
+
+footer a:hover {
+    color: var(--color-primari) !important;
+    text-decoration: none;
+    border-bottom: initial;
+}
+
+/** MENU **/
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 2%;
+}
+
+.menu_categoria a {
+    color: var(--color-blanc) !important;
+    text-decoration: none;
+    border-bottom: initial;
+}
+
+.menu_categoria a:hover {
+    color: var(--color-gris) !important;
+    text-decoration: none;
+    border-bottom: initial;
+}
+
+.menu_categoria a#actiu {
+    color: var(--color-primari) !important;
+    text-decoration: none;
+    border-bottom: initial;
+}
+
+/** TIPOGRAFIA **/
+.mida-xs {
+    font-size: 0.6rem;
+}
+
+.mida-s {
+    font-size: 0.7rem;
+}
+
+.mida-m {
+    font-size: 1rem;
+}
+
+.mida-l {
+    font-size: 1.5rem;
+}
+
+.mida-xl {
+    font-size: 2rem;
+}
+
+.mida-xxl {
+    font-size: 3rem;
+}
+
+.bold-700 {
+    font-weight: 700;
+}
+
+.bold-800 {
+    font-weight: 800;
+}
+
+/** ALINEACIO **/
+.centrat {
+    text-align: center;
+}
+
+.esq {
+    text-align: left;
+}
+
+.justif {
+    text-align: justify;
+}
+
+/** IMATGES **/
+img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.col_4 img {
+    height: 10rem;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+/** CAIXES **/
+.box1 {
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-secundari);
+}
+
+.box2 {
+    padding: 10px;
+    align-items: center;
+    text-align: center;
+    background-color: var(--color-secundari);
+}
+
+.box {
+    margin: 1%;
+    padding: 3%;
+    background-color: var(--color-primari-transp);
+    text-align: justify;
+    position: relative;
+}
+
+ul.menu_categoria>li,
+ul.llista_platges>li {
+    color: var(--color-blanc);
+    background-color: var(--color-primari);
+    border-radius: 5px;
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    align-self: center;
+    padding: 1rem;
+    margin: 1rem;
+    flex: 1 1 30%;
+}
+
+ul.menu_categoria>li {
+    box-shadow: 2px 2px 2px var(--color-gris);
+}
+
+ul.menu_categoria {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+ul.llista_platges {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+/** FONTS **/
+
+ol.llista_fonts>li {
+    text-align: start;
+    color: var(--color-gris);
+    margin: 1rem;
+}
+
+ol.llista_fonts a {
+    color: var(--color-gris);
+    text-decoration: none;
+}
+
+ol.llista_fonts a:hover {
+    color: var(--color-gris);
+    text-decoration: underline;
+}
+
+ol.llista_fonts a:visited {
+    color: var(--color-primari);
+    text-decoration: none;
+}
+
+/** CARROUSEL IMATGES **/
+.slider-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+}
+
+.slider,
+.sliderAutomatic {
+    display: none;
+}
+
+.slider>img,
+.sliderAutomatic>img {
+    height: 25rem;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.controls {
+    max-width: 100%;
+    text-align: center;
+}
+
+.alerta {
+    opacity: 0.7;
+    padding: 20px;
+    background-color: var(--color-primari);
+    color: var(--color-secundari);
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
