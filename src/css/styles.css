@@ -138,6 +138,11 @@ body.portada {
     #logotip {
         max-width: 30%;
     }
+
+    #logotip_peu {
+        max-width: 50px;
+    }
+
 }
 
 /** TABLET **/
@@ -173,6 +178,11 @@ body.portada {
     #logotip {
         max-width: 20%;
     }
+
+    #logotip_peu {
+        max-width: 50px;
+    }
+
 }
 
 /** DESKTOP **/
@@ -221,6 +231,10 @@ body.portada {
 
     #logotip {
         max-width: 15%;
+    }
+
+    #logotip_peu {
+        max-width: 50px;
     }
 
     .categoria>footer {
