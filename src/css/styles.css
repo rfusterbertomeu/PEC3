@@ -94,6 +94,16 @@ body.portada {
     border-bottom: initial;
 }
 
+.col_2_cap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col_2_cap>a {
+    padding-left: 1%;
+}
+
 /** DISPOSITIU MÒBIL **/
 @media screen and (max-width: 43rem) {
     .container {
@@ -113,6 +123,7 @@ body.portada {
         grid-auto-rows: auto;
         gap: 0px;
     }
+
 
     .col_4 {
         display: grid;
@@ -136,13 +147,16 @@ body.portada {
 
     /** IMATGES **/
     #logotip {
-        max-width: 30%;
+        max-width: 15%;
     }
 
     #logotip_peu {
         max-width: 50px;
     }
 
+    .cor-clip-path {
+        width: 20%;
+    }
 }
 
 /** TABLET **/
@@ -176,13 +190,16 @@ body.portada {
     /** IMATGES **/
 
     #logotip {
-        max-width: 20%;
+        max-width: 10%;
     }
 
     #logotip_peu {
         max-width: 50px;
     }
 
+    .cor-clip-path {
+        width: 10%;
+    }
 }
 
 /** DESKTOP **/
@@ -235,6 +252,10 @@ body.portada {
 
     #logotip_peu {
         max-width: 50px;
+    }
+
+    .cor-clip-path {
+        width: 10%;
     }
 
     .categoria>footer {
@@ -354,6 +375,10 @@ footer a:hover {
 
 .esq {
     text-align: left;
+}
+
+.dta {
+    text-align: right;
 }
 
 .justif {
@@ -485,4 +510,45 @@ ol.llista_fonts a:visited {
     color: var(--color-secundari);
     margin-bottom: 15px;
     border-radius: 10px;
+}
+
+/** CLIP-PATH **/
+.cor-clip-path {
+    clip-path: polygon(29.7% 0%, 53.5% 15.3%, 70.3% 0%, 90.6% 10.2%, 100% 35%, 79.7% 70.1%, 53.5% 100%, 20.3% 70.1%, 0% 35%, 10.4% 10.2%);
+}
+
+div>.cor-clip-path {
+    margin: 5%;
+}
+
+/** ANIMACIONS D'ELEMENTS **/
+.logo {
+    animation: gira 7s linear infinite;
+}
+
+#oliva_svg {
+    animation: trasllada 5s linear infinite alternate;
+}
+
+@keyframes gira {
+    to {
+        transform: rotateY(0deg);
+    }
+
+    from {
+        transform: rotateY(360deg);
+    }
+}
+
+
+@keyframes trasllada {
+    to {
+        transform: translateX(50);
+        transform: rotateY(0deg);
+    }
+
+    from {
+        transform: translateX(calc(100%-100vw));
+        transform: rotateY(45deg);
+    }
 }
