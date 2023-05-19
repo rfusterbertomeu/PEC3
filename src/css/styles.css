@@ -105,7 +105,7 @@ body.portada {
 }
 
 /** DISPOSITIU MÒBIL **/
-@media screen and (max-width: 43rem) {
+@media screen and (max-width: 767px) {
     .container {
         position: relative;
         min-height: 100vh;
@@ -157,10 +157,14 @@ body.portada {
     .cor-clip-path {
         width: 20%;
     }
+
+    .contenidor_imatge_destacat {
+        max-width: 100%;
+    }
 }
 
 /** TABLET **/
-@media screen and (min-width: 44rem) and (max-width: 62rem) {
+@media screen and (min-width: 768px) and (max-width: 1023px) {
     .container {
         position: relative;
         min-height: 100vh;
@@ -200,10 +204,21 @@ body.portada {
     .cor-clip-path {
         width: 10%;
     }
+
+    .contenidor_imatge_destacat {
+        max-width: 50%;
+        padding: 1%;
+    }
+
+    .col_2_destacat {
+        display: flex;
+        justify-content: flex-start;
+
+    }
 }
 
 /** DESKTOP **/
-@media screen and (min-width: 63rem) {
+@media screen and (min-width: 1024px) {
     .container {
         position: relative;
     }
@@ -258,6 +273,22 @@ body.portada {
         width: 10%;
     }
 
+    .contenidor_imatge_destacat {
+        max-width: 33.3%;
+        padding-right: 2%
+    }
+
+    .contenidor_imatge_destacat>img {
+        width: auto;
+        height: 100%;
+        clip-path: inset(0, 0, 0, 0);
+    }
+
+    .col_2_destacat {
+        display: flex;
+        justify-content: flex-start;
+    }
+
     .categoria>footer {
         padding: 1.5rem;
         background-color: var(--color-gris);
@@ -270,6 +301,8 @@ body.portada {
         font-size: 1.1rem;
     }
 }
+
+
 
 /** PEU DE PÀGINA **/
 footer,
@@ -385,12 +418,6 @@ footer a:hover {
     text-align: justify;
 }
 
-/** IMATGES **/
-img {
-    width: 100%;
-    height: auto;
-    overflow: hidden;
-}
 
 .col_4 img {
     height: 10rem;
