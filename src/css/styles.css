@@ -26,6 +26,11 @@ ul {
     list-style-type: none;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 /** Capçalera **/
 header {
     background-color: var(--color-gris);
@@ -210,6 +215,12 @@ body.portada {
         padding: 1%;
     }
 
+    .contenidor_imatge_destacat>img {
+        width: 100%;
+        height: auto;
+        clip-path: polygon(10% 1%, 75% 0%, 85% 50%, 75% 100%, 10% 100%);
+    }
+
     .col_2_destacat {
         display: flex;
         justify-content: flex-start;
@@ -279,9 +290,7 @@ body.portada {
     }
 
     .contenidor_imatge_destacat>img {
-        width: auto;
-        height: 100%;
-        clip-path: inset(0, 0, 0, 0);
+        clip-path: polygon(10% 1%, 75% 0%, 85% 50%, 75% 100%, 10% 100%);
     }
 
     .col_2_destacat {
