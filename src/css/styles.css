@@ -129,25 +129,13 @@ body.portada {
         gap: 0px;
     }
 
-
-    .col_4 {
+    .col_4,
+    .col_3 {
         display: grid;
         max-width: 100%;
         grid-template-columns: 1fr;
         grid-auto-rows: minmax(100px, auto);
         gap: 20px;
-    }
-
-    .categoria>footer {
-        padding: 1.5rem;
-        background-color: var(--color-gris);
-        color: var(--color-blanc) !important;
-        position: absolute;
-        margin-top: 5%;
-        bottom: 0;
-        right: 0;
-        left: 0;
-        font-size: 1.1rem;
     }
 
     /** IMATGES **/
@@ -162,7 +150,6 @@ body.portada {
     .cor-clip-path {
         width: 20%;
     }
-
 }
 
 /** TABLET **/
@@ -185,13 +172,13 @@ body.portada {
         gap: 0px;
     }
 
-    .col_4 {
+    .col_4,
+    .col_3 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-auto-rows: minmax(100px, auto);
         gap: 20px;
     }
-
 
     /** IMATGES **/
 
@@ -207,12 +194,6 @@ body.portada {
         width: 10%;
     }
 
-
-    .col_2_destacat {
-        display: flex;
-        justify-content: flex-start;
-
-    }
 }
 
 /** DESKTOP **/
@@ -232,8 +213,17 @@ body.portada {
         grid-template-columns: 1fr 2fr;
         grid-auto-rows: minmax(50px, auto);
         gap: 0px;
-        padding-bottom: 5%;
+        padding-bottom: 1%;
         position: relative;
+        align-items: center;
+
+    }
+
+    .col_3 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0px;
+        padding-bottom: 1%;
     }
 
     .col_4 {
@@ -269,11 +259,6 @@ body.portada {
 
     .cor-clip-path {
         width: 10%;
-    }
-
-    .col_2_destacat {
-        display: flex;
-        justify-content: flex-start;
     }
 
     .categoria>footer {
@@ -361,7 +346,6 @@ a#actiu:hover {
     border-bottom: initial;
 }
 
-
 /** TIPOGRAFIA **/
 .mida-xs {
     font-size: 0.6rem;
@@ -442,12 +426,11 @@ a#actiu:hover {
     position: relative;
 }
 
-ul.menu_categoria>li,
+.menu_categoria>div,
 ul.llista_platges>li {
     color: var(--color-blanc);
     background-color: var(--color-primari);
     border-radius: 5px;
-    width: 25%;
     text-align: center;
     justify-content: center;
     align-items: center;
@@ -458,14 +441,21 @@ ul.llista_platges>li {
     flex: 1 1 30%;
 }
 
-ul.menu_categoria>li {
+ul.llista_platges>li {
+    width: 25%;
+}
+
+
+.menu_categoria>.col_2 {
     box-shadow: 2px 2px 2px var(--color-gris);
 }
 
-ul.menu_categoria {
-    display: flex;
-    flex-direction: column;
-    padding: 0;
+.c1 {
+    width: 40%;
+}
+
+.c2 {
+    width: 60%;
 }
 
 ul.llista_platges {
