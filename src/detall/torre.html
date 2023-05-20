@@ -33,13 +33,18 @@
     <main>
         <div class="container marge">
             <div class="col_1">
+                <div class="contenidor_imatge_destacat">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="../img/torre_comare-331w.jpeg?as=webp">
+                        <source media="(min-width: 768px) and (max-width: 1023px)"
+                            srcset="../img/torre_comare-500w.jpeg?as=webp">
+                        <source media="(min-width: 1024px)" srcset="../img/torre_comare-960w.jpeg?as=webp">
+                        <img src="../img/torre_comare-960w.jpeg?as=webp" alt="Torre de la Comare">
+                    </picture>
+                </div>
                 <div class="col_1 box">
-                    <div class="col_2_destacat">
-                        <div class="contenidor_imatge_destacat">
-                            <img alt="Torre Comare" src="../img/torre_comare.jpeg">
-                        </div>
-                        <h2>Palau Comtal: Torre del Carrer Comare (S. XVI)</h2>
-                    </div>
+                    <h2>Palau Comtal: Torre del Carrer Comare (S. XVI)</h2>
+
                     <p>Torre que reforçava el sector sud-oriental del castell-palau de la família Centelles Riusech,
                         comtes d'Oliva, i des de la qual es poden apreciar les dimensions del monument, la seva muralla
                         i l'espai de la fossa que el circumdava. Conserva tres plantes comunicades amb el mateix nombre
@@ -91,11 +96,11 @@
 
         </div>
     </main>
-    <footer class="marge centrat">
+    <footer class="centrat">
         <div>
             <p class="mida-xs">2023 &copy; Activitat realitzada per Roser Fuster Bertomeu</p>
-            <p class="mida-xs"><a href="../fonts.html" target="_blank">Fonts informació utilitzades</a>
-            </p>
+            <p class="mida-s"><a href="../fonts.html" target="_blank">Fonts informació utilitzades</a></p>
+            <object id="logotip_peu" data="../img/oliva-logo.svg" type="image/svg+xml"></object>
         </div>
     </footer>
     <script type="module" src="../js/index.js"></script>

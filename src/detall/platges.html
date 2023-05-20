@@ -35,13 +35,23 @@
     <main>
         <div class="container marge">
             <div class="col_1">
+
+                <div class="contenidor_imatge_destacat">
+                    <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="../img/platja3-331w.webp">
+                        <source media="(max-width: 767px)" type="image/jpeg" srcset="../img/platja3-331w.jpg">
+                        <source media="(min-width: 768px) and (max-width: 1023px)" type="image/webp"
+                            srcset="../img/platja3-500w.webp">
+                        <source media="(min-width: 768px) and (max-width: 1023px)" type="image/jpeg"
+                            srcset="../img/platja3-500w.jpg">
+                        <source media="(min-width: 1024px)" type="image/webp" srcset="../img/platja3-900w.webp">
+                        <source media="(min-width: 1024px)" type="image/jpeg" srcset="../img/platja3-900w.jpg">
+                        <img src="../img/platja3-900w.jpg" alt="Platja Readells">
+                    </picture>
+                </div>
                 <div class="col_1 box">
-                    <div class="col_2_destacat">
-                        <div class="contenidor_imatge_destacat">
-                            <img alt="Platja Rabdells" src="../img/platja3.webp">
-                        </div>
-                        <h2>Platges</h2>
-                    </div>
+                    <h2>Platges</h2>
+
 
                     <p>Oliva està situada en un lloc privilegiat del Mediterrani amb nombroses i esplèndides platges
                         d’arena fina i daurada, d’aigües poc profundes que s’estenen al llarg de 8.5 km i es coneixen a
@@ -90,11 +100,11 @@
             </div>
         </div>
     </main>
-    <footer class="marge centrat">
+    <footer class="centrat">
         <div>
             <p class="mida-xs">2023 &copy; Activitat realitzada per Roser Fuster Bertomeu</p>
-            <p class="mida-xs">Fonts informació <a href="../fonts.html" target="_blank">Ajuntament d'Oliva</a>
-            </p>
+            <p class="mida-s"><a href="../fonts.html" target="_blank">Fonts informació utilitzades</a></p>
+            <object id="logotip_peu" data="../img/oliva-logo.svg" type="image/svg+xml"></object>
         </div>
     </footer>
     <script type="module" src="../js/index.js"></script>

@@ -30,13 +30,17 @@
     <main>
         <div class="container marge">
             <div class="col_1">
+                <div class="contenidor_imatge_destacat">
+                    <picture>
+                        <source media="(max-width: 767px)" srcset="../img/bar-331w.png?as=webp">
+                        <source media="(min-width: 768px) and (max-width: 1023px)" srcset="../img/bar-500w.png?as=webp">
+                        <source media="(min-width: 1024px)" srcset="../img/bar-900w.png?as=webp">
+                        <img src="../img/bar-900w.png?as=webp" alt="Bar Soqueta">
+                    </picture>
+                </div>
                 <div class="col_1 box">
-                    <div class="col_2_destacat">
-                        <div class="contenidor_imatge_destacat">
-                            <img alt="Museu etnològic" src="../img/bar.png">
-                        </div>
-                        <h2>Restauració</h2>
-                    </div>
+                    <h2>Restauració</h2>
+
                     <p> L'esmorzar és una tradició gastronòmica que defineix com és València, incloent Oliva, i com són
                         les seues gents: un irreductible llogaret,orgullosa dels seus localismes culinaris.
                     </p>
@@ -100,11 +104,11 @@
             </div>
         </div>
     </main>
-    <footer class="marge centrat">
+    <footer class="centrat">
         <div>
             <p class="mida-xs">2023 &copy; Activitat realitzada per Roser Fuster Bertomeu</p>
-            <p class="mida-xs"><a href="../fonts.html" target="_blank">Fonts informació utilitzades</a>
-            </p>
+            <p class="mida-s"><a href="../fonts.html" target="_blank">Fonts informació utilitzades</a></p>
+            <object id="logotip_peu" data="../img/oliva-logo.svg" type="image/svg+xml"></object>
         </div>
     </footer>
 </body>
