@@ -43,6 +43,7 @@ header {
 }
 
 header a {
+    transition: all 0.5s ease-in-out;
     color: var(--color-blanc) !important;
     text-decoration: none;
     border-bottom: initial;
@@ -50,6 +51,7 @@ header a {
 
 header a:hover {
     color: var(--color-primari-transp2) !important;
+    font-size: larger;
     text-decoration: none;
     border-bottom: initial;
 }
@@ -181,6 +183,7 @@ body.portada {
 
     .cor-clip-path {
         width: 10%;
+
     }
 
 }
@@ -308,12 +311,21 @@ footer a:hover {
 }
 
 .menu_categoria a {
+    transition: font-size 0.5s lineal;
     color: var(--color-blanc) !important;
     text-decoration: none;
     border-bottom: initial;
 }
 
+.menu_categoria a:hover {
+    color: var(--color-blanc) !important;
+    font-size: larger;
+    text-decoration: underline;
+    border-bottom: initial;
+}
+
 a#actiu {
+    transition: color 0.5s ease-in-out;
     color: var(--color-primari-transp2) !important;
     text-decoration: none;
     border-bottom: initial;
@@ -322,12 +334,6 @@ a#actiu {
 a#actiu:hover {
     color: var(--color-blanc) !important;
     text-decoration: none;
-    border-bottom: initial;
-}
-
-.menu_categoria a:hover {
-    color: var(--color-blanc) !important;
-    text-decoration: underline;
     border-bottom: initial;
 }
 
@@ -510,7 +516,8 @@ ol.llista_fonts a:visited {
 
 /** CLIP-PATH **/
 .cor-clip-path {
-    clip-path: polygon(29.7% 0%, 53.5% 15.3%, 70.3% 0%, 90.6% 10.2%, 100% 35%, 79.7% 70.1%, 53.5% 100%, 20.3% 70.1%, 0% 35%, 10.4% 10.2%);
+    clip-path: polygon(51% 24%, 73% 2%, 98% 20%, 98% 53%, 50% 100%, 50% 100%, 3% 54%, 2% 24%, 28% 3%);
+    margin: 1rem;
 }
 
 div>.cor-clip-path {
@@ -524,6 +531,10 @@ div>.cor-clip-path {
 
 #oliva_svg {
     animation: trasllada 5s linear infinite alternate;
+}
+
+.contenidor_imatge_destacat:hover {
+    mask-image: linear-gradient(to bottom right, transparent 5%, black);
 }
 
 @keyframes gira {
