@@ -1,6 +1,7 @@
 :root {
-    --color-primari: #5fbaa7;
+    --color-primari: #1F7A66;
     --color-primari-transp: #eff8f6;
+    --color-primari-transp2: #97c9be;
     --color-secundari: #242333;
     --color-blanc: #fff;
     --color-gris: #444451;
@@ -44,7 +45,7 @@ header a {
 }
 
 header a:hover {
-    color: var(--color-primari) !important;
+    color: var(--color-primari-transp2) !important;
     text-decoration: none;
     border-bottom: initial;
 }
@@ -309,7 +310,7 @@ footer a {
 }
 
 footer a:hover {
-    color: var(--color-primari) !important;
+    color: var(--color-primari-transp2) !important;
     text-decoration: none;
     border-bottom: initial;
 }
@@ -329,7 +330,7 @@ footer a:hover {
 }
 
 a#actiu {
-    color: var(--color-primari) !important;
+    color: var(--color-primari-transp2) !important;
     text-decoration: none;
     border-bottom: initial;
 }
@@ -341,8 +342,8 @@ a#actiu:hover {
 }
 
 .menu_categoria a:hover {
-    color: var(--color-gris) !important;
-    text-decoration: none;
+    color: var(--color-blanc) !important;
+    text-decoration: underline;
     border-bottom: initial;
 }
 
