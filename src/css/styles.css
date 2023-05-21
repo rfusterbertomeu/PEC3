@@ -19,7 +19,11 @@ body {
     margin: 0;
 }
 
-html h2 {
+h1 {
+    color: var(--color-secundari);
+}
+
+h2 {
     color: var(--color-primari);
 }
 
