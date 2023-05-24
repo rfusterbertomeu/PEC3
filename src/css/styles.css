@@ -543,7 +543,7 @@ ol.llista_fonts a:visited {
 
 /** CLIP-PATH **/
 .cor-clip-path {
-    clip-path: polygon(51% 24%, 73% 2%, 98% 20%, 98% 53%, 50% 100%, 50% 100%, 3% 54%, 2% 24%, 28% 3%);
+    clip-path: polygon(51% 24%, 73% 2%, 98% 20%, 98% 53%, 50% 100%, 3% 54%, 2% 24%, 28% 3%);
     margin: 1rem;
 }
 
