@@ -43,7 +43,7 @@ header {
 }
 
 header a {
-    transition: all 0.5s ease-in-out;
+    transition: all 0.1s ease-in-out;
     color: var(--color-blanc) !important;
     text-decoration: none;
     border-bottom: initial;
@@ -95,7 +95,7 @@ body.portada {
 }
 
 .btnIndex>a {
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
     color: var(--color-primari);
     text-decoration: none;
     border-bottom: initial;
@@ -188,13 +188,13 @@ body.portada {
 
     }
 
-    .imatge_museus_dta {
+    .imatge_detall_dta {
         float: right;
         width: 50%;
         padding-left: 1%;
     }
 
-    .imatge_museus_esq {
+    .imatge_detall_esq {
         float: left;
         width: 50%;
         padding-right: 1%;
@@ -271,13 +271,13 @@ body.portada {
         font-size: 1.1rem;
     }
 
-    .imatge_museus_dta {
+    .imatge_detall_dta {
         float: right;
         width: 33.3%;
         padding-left: 1%;
     }
 
-    .imatge_museus_esq {
+    .imatge_detall_esq {
         float: left;
         width: 33.3%;
         padding-right: 1%;
@@ -337,7 +337,7 @@ footer a:hover {
 }
 
 .menu_categoria a {
-    transition: font-size 0.5s lineal;
+    transition: font-size 0.1s lineal;
     color: var(--color-blanc) !important;
     text-decoration: none;
     border-bottom: initial;
@@ -351,7 +351,7 @@ footer a:hover {
 }
 
 a#actiu {
-    transition: color 0.5s ease-in-out;
+    transition: color 0.1s ease-in-out;
     color: var(--color-primari-transp2) !important;
     text-decoration: none;
     border-bottom: initial;
