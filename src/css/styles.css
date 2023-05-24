@@ -95,12 +95,14 @@ body.portada {
 }
 
 .btnIndex>a {
+    transition: all 0.5s ease-in-out;
     color: var(--color-primari);
     text-decoration: none;
     border-bottom: initial;
 }
 
 .btnIndex>a:hover {
+    font-size: larger;
     color: var(--color-gris);
     text-decoration: none;
     border-bottom: initial;
@@ -186,6 +188,18 @@ body.portada {
 
     }
 
+    .imatge_museus_dta {
+        float: right;
+        width: 50%;
+        padding-left: 1%;
+    }
+
+    .imatge_museus_esq {
+        float: left;
+        width: 50%;
+        padding-right: 1%;
+    }
+
 }
 
 /** DESKTOP **/
@@ -255,6 +269,18 @@ body.portada {
         right: 0;
         left: 0;
         font-size: 1.1rem;
+    }
+
+    .imatge_museus_dta {
+        float: right;
+        width: 33.3%;
+        padding-left: 1%;
+    }
+
+    .imatge_museus_esq {
+        float: left;
+        width: 33.3%;
+        padding-right: 1%;
     }
 }
 
@@ -415,6 +441,7 @@ a#actiu:hover {
     background-color: var(--color-primari-transp);
     text-align: justify;
     position: relative;
+    overflow: hidden;
 }
 
 .menu_categoria>div,
