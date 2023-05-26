@@ -56,14 +56,6 @@ header a:hover {
     border-bottom: initial;
 }
 
-body.portada {
-    height: 100%;
-    background-image: url("../img/oliva.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
 .portada>main {
     display: block;
     text-align: center;
@@ -120,6 +112,13 @@ body.portada {
 
 /** DISPOSITIU MÒBIL **/
 @media screen and (max-width: 767px) {
+    body.portada {
+        background-image: url("../img/oliva_s.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     .container {
         position: relative;
         min-height: 100vh;
@@ -155,14 +154,21 @@ body.portada {
 
 /** TABLET **/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    body.portada {
+        background-image: url("../img/oliva_m.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     .container {
         position: relative;
         min-height: 100vh;
     }
 
     .marge {
-        margin-left: 10%;
-        margin-right: 10%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 
     /** COLUMNES **/
@@ -204,13 +210,20 @@ body.portada {
 
 /** DESKTOP **/
 @media screen and (min-width: 1024px) {
+    body.portada {
+        background-image: url("../img/oliva_l.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     .container {
         position: relative;
     }
 
     .marge {
-        margin-left: 20%;
-        margin-right: 20%;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     /** COLUMNES **/
