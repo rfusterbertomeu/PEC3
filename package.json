@@ -1,7 +1,7 @@
 {
-  "name": "pac2",
+  "name": "pac3",
   "version": "1.0.0",
-  "description": "Pac2 v1",
+  "description": "Pac3 v1",
   "source": "src/index.html",
   "browserslist": "> 0.5%, last 2 versions, not dead",
   "scripts": {
