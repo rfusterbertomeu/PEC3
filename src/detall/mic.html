@@ -92,10 +92,18 @@
             <div class="box">
 
                 <h2>Programació</h2>
-                <div class="imatge_detall_dta"><img loading="lazy" widht="1200" height="1200"  alt="Desembarc"
-                        srcset="../img/mic-1200w.gif 1200w, ../img/mic-600w.gif 600w, ../img/mic-400w.gif 400w" sizes="(max-width: 767px) 400px,
-                        (min-width: 768px) and (max-width: 1023px) 600px,
-                        (min-width: 1024px) 1200px" src="../img/mic-1200w.gif"></div>
+                    <div class="imatge_detall_dta">
+                        <!--img loading="lazy" widht="1200" height="1200"  alt="Desembarc"
+                            srcset="../img/mic-1200w.gif 1200w, ../img/mic-600w.gif 600w, ../img/mic-400w.gif 400w" sizes="(max-width: 767px) 400px,
+                            (min-width: 768px) and (max-width: 1023px) 600px,
+                            (min-width: 1024px) 1200px" src="../img/mic-1200w.gif"-->
+                        <video widht="1200" height="1200" autoplay loop name="media">
+                            <source media="(min-width: 1024px)" src="../img/mic-1200w.webm" type="video/webm">
+                            <source media="(min-width: 768px) and (max-width: 1023px)" src="../img/mic-600w.webm" type="video/webm">
+                            <source media="(max-width: 767px)" src="../img/mic-400w.webm" type="video/webm">
+                            El navegador no suporta aquest video
+                        </video>
+                    </div>
 
                 <ul>
                     <li><span class="bold-700">Dijous 20 de juliol:</span> Pregó, Dia dels Músics i Nit del Putxero

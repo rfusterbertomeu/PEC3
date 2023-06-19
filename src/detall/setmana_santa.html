@@ -36,7 +36,6 @@
                 <div class="contenidor_imatge_destacat">
                     <picture>
                         <source media="(min-width: 1024px)" srcset="../img/ss-900w.jpg?as=webp">
-
                         <source media="(min-width: 768px) and (max-width: 1023px)" srcset="../img/ss-500w.jpg?as=webp">
                         <source media="(max-width: 767px)" srcset="../img/ss-331w.jpg?as=webp">
                         <img widht="900" height="900" src="../img/ss-900w.jpg?as=webp" alt="Junta Central Setmana Santa">
@@ -82,10 +81,23 @@
                 <div class="box">
 
                     <h2>Programació</h2>
-                    <div class="imatge_detall_dta"><img loading="lazy" alt="Pas Vera Creu" widht="1200" height="1200" 
-                            srcset="../img/ss-1200w.gif 1200w, ../img/ss-600w.gif 600w, ../img/ss-400w.gif 400w" sizes="(min-width: 1024px) 1200px,
+                    <div class="imatge_detall_dta">
+                        <!--img loading="lazy" alt="Pas Vera Creu" widht="1200" height="1200" 
+                            srcset="../img/ss-1200w.gif 1200w, 
+                            ../img/ss-600w.gif 600w, 
+                            ../img/ss-400w.gif 400w" 
+                            sizes="(min-width: 1024px) 1200px,
                             (min-width: 768px) and (max-width: 1023px) 600px,
-                            (max-width: 767px) 400px" src="../img/ss-1200w.gif"> </div>
+                            (max-width: 767px) 400px" 
+                            src="../img/ss-1200w.gif"-->
+                            <video widht="1200" height="1200" autoplay loop name="media">
+                                <source media="(min-width: 1024px)" src="../img/ss-1200w.webm" type="video/webm">
+                                <source media="(min-width: 768px) and (max-width: 1023px)" src="../img/ss-600w.webm" type="video/webm">
+                                <source media="(max-width: 767px)" src="../img/ss-400w.webm" type="video/webm">
+                                El navegador no suporta aquest video
+                            </video>
+                        
+                        </div>
                     <ul>
                         <li><span class="bold-700">Diumenge de Rams, 2 d'abril:</span> Diumenge de Rams del Parc de
                             l'Estació 9:30h a la Residència Ntra. Sra. del Rebollet</li>
