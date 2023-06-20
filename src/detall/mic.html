@@ -37,25 +37,26 @@
                 <div class="contenidor_imatge_destacat">
                     <picture>
                         <source media="(min-width: 1024px)" type="image/webp" srcset="../img/mic-900w.webp">
-                        <source media="(min-width: 1024px)" type="image/jpeg" srcset="../img/mic-900w.jpg">
+                        <source media="(min-width: 1024px)" type="image/jpeg" srcset="../img/mic-900w.jpg?as=webp">
 
                         <source media="(min-width: 768px) and (max-width: 1023px)" type="image/webp"
                             srcset="../img/mic-500w.webp">
                         <source media="(min-width: 768px) and (max-width: 1023px)" type="image/jpeg"
-                            srcset="../img/mic-500w.jpg">
+                            srcset="../img/mic-500w.jpg?as=webp">
                         <source media="(max-width: 767px)" type="image/webp" srcset="../img/mic-300w.webp">
-                        <source media="(max-width: 767px)" type="image/jpeg" srcset="../img/mic-300w.jpg">
-                        <img widht="900" height="900" src="../img/mic-900w.jpg" alt="Federació Moros i Cristians">
+                        <source media="(max-width: 767px)" type="image/jpeg" srcset="../img/mic-300w.jpg?as=webp">
+                        <img widht="900" height="900" src="../img/mic-900w.jpg?as=webp"
+                            alt="Federació Moros i Cristians">
                     </picture>
                 </div>
                 <div class="box">
                     <h1>Moros i Cristians</h1>
 
-                    <div class="imatge_detall_esq"><img widht="1200" height="1200"  alt="Entrà mora"
-                            srcset="../img/mic1-1200w.jpg 1200w, ../img/mic1-600w.jpg 600w, ../img/mic1-400w.jpg 400w"
+                    <div class="imatge_detall_esq"><img widht="1200" height="1200" alt="Entrà mora"
+                            srcset="../img/mic1-1200w.jpg?as=webp 1200w, ../img/mic1-600w.jpg?as=webp 600w, ../img/mic1-400w.jpg?as=webp 400w"
                             sizes="(min-width: 1024px) 1200px,
                             (min-width: 768px) and (max-width: 1023px) 600px,
-                            (max-width: 767px) 400px" src="../img/mic1-1200w.jpg"></div>
+                            (max-width: 767px) 400px" src="../img/mic1-1200w.jpg?as=webp"></div>
                     <p> La tercera setmana de juliol, tots els anys, moros i cristians envaeixen Oliva. La festa arranca
                         dijous amb el pregó de festes a la plaça de l’Ajuntament, el convidat proclama l’inici de les
                         festes. Cada filada torna llavors en cercavila cap a la seua càbila per preparar la Nit del
@@ -77,9 +78,9 @@
                         Enguany, 2023, les festes tindran lloc del 20 al 23 de juliol.
                     </p>
                     <!--div class="slider-container">
-                        <div class="slider"><img loading="lazy"alt="Entrà mora" src="../img/mic1.jpg" id="0"></div>
-                        <div class="slider"><img loading="lazy"alt="Entrà cristiana" src="../img/mic2.jpg" id="1"></div>
-                        <div class="slider"><img loading="lazy"alt="Desembarc" src="../img/mic3.jpg" id="2"></div>
+                        <div class="slider"><img loading="lazy"alt="Entrà mora" src="../img/mic1.jpg?as=webp"  id="0"></div>
+                        <div class="slider"><img loading="lazy"alt="Entrà cristiana" src="../img/mic2.jpg?as=webp"  id="1"></div>
+                        <div class="slider"><img loading="lazy"alt="Desembarc" src="../img/mic3.jpg?as=webp"  id="2"></div>
                         <div class="slider"><img loading="lazy"alt="Presentació" src="../img/mic4.png" id="3"></div>
 
                     </div>
@@ -92,18 +93,19 @@
             <div class="box">
 
                 <h2>Programació</h2>
-                    <div class="imatge_detall_dta">
-                        <!--img loading="lazy" widht="1200" height="1200"  alt="Desembarc"
+                <div class="imatge_detall_dta">
+                    <!--img loading="lazy" widht="1200" height="1200"  alt="Desembarc"
                             srcset="../img/mic-1200w.gif 1200w, ../img/mic-600w.gif 600w, ../img/mic-400w.gif 400w" sizes="(max-width: 767px) 400px,
                             (min-width: 768px) and (max-width: 1023px) 600px,
                             (min-width: 1024px) 1200px" src="../img/mic-1200w.gif"-->
-                        <video widht="1200" height="1200" autoplay loop name="media">
-                            <source media="(min-width: 1024px)" src="../img/mic-1200w.webm" type="video/webm">
-                            <source media="(min-width: 768px) and (max-width: 1023px)" src="../img/mic-600w.webm" type="video/webm">
-                            <source media="(max-width: 767px)" src="../img/mic-400w.webm" type="video/webm">
-                            El navegador no suporta aquest video
-                        </video>
-                    </div>
+                    <video widht="1200" height="1200" autoplay loop name="media">
+                        <source media="(min-width: 1024px)" src="../img/mic-1200w.webm" type="video/webm">
+                        <source media="(min-width: 768px) and (max-width: 1023px)" src="../img/mic-600w.webm"
+                            type="video/webm">
+                        <source media="(max-width: 767px)" src="../img/mic-400w.webm" type="video/webm">
+                        El navegador no suporta aquest video
+                    </video>
+                </div>
 
                 <ul>
                     <li><span class="bold-700">Dijous 20 de juliol:</span> Pregó, Dia dels Músics i Nit del Putxero
