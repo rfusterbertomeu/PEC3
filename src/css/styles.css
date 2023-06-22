@@ -113,7 +113,7 @@ header a:hover {
 /** DISPOSITIU MÒBIL **/
 @media screen and (max-width: 767px) {
     body.portada {
-        background-image: url("../img/oliva_s.jpg");
+        background-image: url("../img/oliva_s.jpg?as=webp");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -155,7 +155,7 @@ header a:hover {
 /** TABLET **/
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     body.portada {
-        background-image: url("../img/oliva_m.jpg");
+        background-image: url("../img/oliva_m.jpg?as=webp");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
@@ -211,7 +211,7 @@ header a:hover {
 /** DESKTOP **/
 @media screen and (min-width: 1024px) {
     body.portada {
-        background-image: url("../img/oliva_l.jpg");
+        background-image: url("../img/oliva_l.jpg?as=webp");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
